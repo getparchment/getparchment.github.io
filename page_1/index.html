@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+ <meta charset='utf-8'>
+<link rel="stylesheet" href="../../static/index.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<span class="blog-name"></span>
+		<a class="nav" href="/">Home</a>
+  	<!--<a class="nav" href="about.html">About</a>-->
+	</div>
+<div class="content">
+	<div class="post-list">
+	
+    <div class="entry">
+			<a class="title" id="page_1/2016/09/26/小计/index.html" href="#">小计</a>
+      <span class="date">26 Sep 16</span>
+    </div>
+	
+    <div class="entry">
+			<a class="title" id="page_1/2016/09/26/哈利波特节选/index.html" href="#">哈利波特节选</a>
+      <span class="date">26 Sep 16</span>
+    </div>
+	
+    <div class="entry">
+			<a class="title" id="page_1/2016/09/26/markdown语法/index.html" href="#">markdown语法</a>
+      <span class="date">26 Sep 16</span>
+    </div>
+	
+    <div class="entry">
+			<a class="title" id="page_1/2016/09/26/markdown展示/index.html" href="#">markdown展示</a>
+      <span class="date">26 Sep 16</span>
+    </div>
+	
+	</div>
+</div>
+
+<div class="bottom_nav">
+	<div class="pagination">
+	
+	<a class="pagination" id="1" href="#">1</a>
+	
+	</div>
+  powered by <a href="https://github.com/gaotongfei/parchment">parchemnt</a>, theme <a href="https://github.com/skyline75489/Genie">Genie</a>
+</div>
+
+</div>
+<script type="text/javascript">
+var href = window.location.href;
+var pagination = document.getElementsByClassName("pagination");
+for (var i=0;i<pagination.length;i++){
+	pagination[i].pathname = 'page_' + pagination[i].id + '/index.html'
+}
+var postTitle = document.getElementsByClassName("title");
+for (var i=0;i<postTitle.length;i++){
+	postTitle[i].pathname = postTitle[i].id
+}
+
+</script>
+</body>
+
+</html>
